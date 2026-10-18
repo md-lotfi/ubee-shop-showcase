@@ -14,7 +14,7 @@ const TITLE = "UBee — Offline-first POS & inventory app for small shops | Rays
 const DESC = "UBee by Raystate helps independent shops ring up sales, track stock, follow customer balances, print receipts and view reports — even offline. Get it on Google Play.";
 
 export const Route = createFileRoute("/")({
-  validateSearch: (s: Record<string, unknown>): { lang?: Locale } => (isLocale(s.lang) ? { lang: s.lang } : {}),
+  validateSearch: (s: Record<string, unknown>): { lang?: Locale } => (isLocale(s["lang"]) ? { lang: s["lang"] } : {}),
   head: () => ({
     meta: [
       { title: TITLE },
@@ -127,7 +127,7 @@ function Index() {
             className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full border border-border md:hidden"
             aria-expanded={open}
             aria-controls="mobile-menu"
-            aria-label={open ? "Close menu" : "Open menu"}
+            aria-label={{ en: "Menu", fr: "Menu", ar: "القائمة" }[lang]}
             onClick={() => setOpen((o) => !o)}
           >
             {open ? <X className="size-5" aria-hidden="true" /> : <Menu className="size-5" aria-hidden="true" />}
@@ -172,8 +172,8 @@ function Index() {
             <div className="rounded-3xl border border-border bg-card p-4 shadow-sm sm:p-6">
               <img src={banner.url} alt={t.hero.bannerAlt} width={1198} height={444} className="h-auto w-full" fetchPriority="high" />
               <div className="mt-4 flex items-end justify-center gap-3 sm:gap-5">
-                <img src={s1.url} alt={t.gallery.shots[0].alt} width={485} height={1080} className="w-[38%] max-w-44 rounded-2xl border border-border shadow-md" />
-                <img src={s5.url} alt={t.gallery.shots[3].alt} width={864} height={1920} className="w-[38%] max-w-44 translate-y-3 rounded-2xl border border-border shadow-md" />
+                <img src={s1.url} alt={t.gallery.shots[0]?.alt} width={485} height={1080} className="w-[38%] max-w-44 rounded-2xl border border-border shadow-md" />
+                <img src={s5.url} alt={t.gallery.shots[3]?.alt} width={864} height={1920} className="w-[38%] max-w-44 translate-y-3 rounded-2xl border border-border shadow-md" />
               </div>
             </div>
           </div>
