@@ -186,7 +186,7 @@ function Index() {
             <p className="mt-3 text-lg text-muted-foreground">{t.features.intro}</p>
             <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {t.features.items.map((f, i) => {
-                const Icon = ICONS[i];
+                const Icon = ICONS[i] ?? ShoppingCart;
                 return (
                   <li key={f.title} className="rounded-2xl border border-border bg-background p-6">
                     <span className="inline-flex size-11 items-center justify-center rounded-xl bg-primary text-primary-foreground">
@@ -201,7 +201,7 @@ function Index() {
                 <h3 className="text-xl font-semibold">{t.features.capabilities}</h3>
                 <ul className="mt-4 grid gap-3">
                   {t.features.caps.map((c, i) => {
-                    const Icon = CAP_ICONS[i];
+                    const Icon = CAP_ICONS[i] ?? ScanBarcode;
                     return (
                       <li key={c} className="flex items-start gap-3 text-ink-muted">
                         <Icon aria-hidden="true" className="mt-0.5 size-5 shrink-0 text-honey" />
@@ -225,7 +225,7 @@ function Index() {
                 <li key={i}>
                   <figure>
                     <div className="overflow-hidden rounded-2xl border-4 border-ink bg-ink shadow-md">
-                      <img src={SHOTS[i].url} alt={s.alt} loading="lazy" decoding="async" width={485} height={1080} className="aspect-[485/1080] h-auto w-full object-cover object-top" />
+                      <img src={SHOTS[i]?.url} alt={s.alt} loading="lazy" decoding="async" width={485} height={1080} className="aspect-[485/1080] h-auto w-full object-cover object-top" />
                     </div>
                     <figcaption className="mt-3 text-sm font-medium leading-snug">{s.caption}</figcaption>
                   </figure>
