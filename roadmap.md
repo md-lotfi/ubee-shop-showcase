@@ -1,0 +1,2 @@
+- [x] Marketing site (EN/FR/AR)
+- [x] Use app icon for logo + favicon

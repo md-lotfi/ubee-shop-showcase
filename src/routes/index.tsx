@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { ArrowDown, Globe, Mail, Menu, Phone, X, ExternalLink, ShoppingCart, Boxes, Users, ReceiptText, BarChart3, ScanBarcode, WifiOff } from "lucide-react";
 import { COPY, LOCALES, PLAY_URL, EMAIL, PHONE, SITE, isLocale, type Locale } from "@/lib/i18n";
-import logo from "@/assets/ubee-logo.png.asset.json";
+import logo from "@/assets/ubee-app-icon.png.asset.json";
 import banner from "@/assets/ubee-pos-banner.png.asset.json";
 import s1 from "@/assets/ubee-play-01.jpg.asset.json";
 import s3 from "@/assets/ubee-play-03.jpg.asset.json";
@@ -106,7 +106,7 @@ function Index() {
       <header className="sticky top-0 z-40 border-b border-border/70 bg-background/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-2.5 sm:px-6">
           <a href="#main" className="flex min-w-0 shrink-0 items-center gap-2" aria-label="UBee — Raystate">
-            <img src={logo.url} alt="" width={36} height={40} className="h-10 w-auto" />
+            <img src={logo.url} alt="" width={40} height={40} className="size-10 rounded-xl" />
             <span className="font-display text-xl font-bold" dir="ltr">UBee</span>
           </a>
           <nav aria-label={t.nav.features} className="hidden md:block">
@@ -271,7 +271,7 @@ function Index() {
       <footer className="border-t border-border bg-card">
         <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 sm:grid-cols-2 sm:px-6 lg:grid-cols-[2fr_1fr_1fr]">
           <div className="flex items-start gap-3">
-            <img src={logo.url} alt="" loading="lazy" width={36} height={40} className="h-10 w-auto" />
+            <img src={logo.url} alt="" loading="lazy" width={40} height={40} className="size-10 rounded-xl" />
             <p className="text-muted-foreground">{t.footer.tagline}</p>
           </div>
           <div>
