@@ -29,6 +29,9 @@ Open http://localhost:8080/. To check GitHub Pages project-path behavior, serve 
 - Contact and download links are present in the localized HTML, so they work without JavaScript. Canonicals and alternate-language metadata are also written into the HTML for crawlers.
 - CNAME, robots.txt, sitemap.xml, .nojekyll, and 404.html support static hosting.
 - tools/check_static.py validates the publish tree using only the Python standard library.
+- legal-source/ contains the editable English, French and Arabic Markdown sources. Run `python3 tools/build_legal_pages.py` after editing them to regenerate the nine static pages under legal/; `--check` detects stale generated pages.
+
+The legal pages are linked from the showcase and UBee's app settings/Premium flow. Review [legal-review.md](legal-review.md) before publication, including the publisher details and Play Console disclosures.
 
 Keep the visual system aligned across all three pages. Update translations, headings, feature descriptions, screenshots, and metadata together. Avoid root-relative local paths so the pages continue to work under a repository prefix. Do not add private keys, secrets, analytics, invented customer claims, or unverified product promises.
 

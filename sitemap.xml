@@ -1,25 +1,87 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml version='1.0' encoding='utf-8'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ubee.raystate.com/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ubee.raystate.com/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://ubee.raystate.com/fr/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://ubee.raystate.com/ar/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://ubee.raystate.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ubee.raystate.com/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ubee.raystate.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ubee.raystate.com/ar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ubee.raystate.com/" />
   </url>
   <url>
     <loc>https://ubee.raystate.com/fr/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ubee.raystate.com/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://ubee.raystate.com/fr/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://ubee.raystate.com/ar/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://ubee.raystate.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ubee.raystate.com/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ubee.raystate.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ubee.raystate.com/ar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ubee.raystate.com/" />
   </url>
   <url>
     <loc>https://ubee.raystate.com/ar/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ubee.raystate.com/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://ubee.raystate.com/fr/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://ubee.raystate.com/ar/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://ubee.raystate.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ubee.raystate.com/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ubee.raystate.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ubee.raystate.com/ar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ubee.raystate.com/" />
+  </url>
+  <url>
+    <loc>https://ubee.raystate.com/legal/en/privacy-policy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ubee.raystate.com/legal/en/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ubee.raystate.com/legal/fr/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ubee.raystate.com/legal/ar/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ubee.raystate.com/legal/en/privacy-policy/" />
+  </url>
+  <url>
+    <loc>https://ubee.raystate.com/legal/fr/privacy-policy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ubee.raystate.com/legal/en/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ubee.raystate.com/legal/fr/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ubee.raystate.com/legal/ar/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ubee.raystate.com/legal/en/privacy-policy/" />
+  </url>
+  <url>
+    <loc>https://ubee.raystate.com/legal/ar/privacy-policy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ubee.raystate.com/legal/en/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ubee.raystate.com/legal/fr/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ubee.raystate.com/legal/ar/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ubee.raystate.com/legal/en/privacy-policy/" />
+  </url>
+  <url>
+    <loc>https://ubee.raystate.com/legal/en/terms-of-use/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ubee.raystate.com/legal/en/terms-of-use/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ubee.raystate.com/legal/fr/terms-of-use/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ubee.raystate.com/legal/ar/terms-of-use/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ubee.raystate.com/legal/en/terms-of-use/" />
+  </url>
+  <url>
+    <loc>https://ubee.raystate.com/legal/fr/terms-of-use/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ubee.raystate.com/legal/en/terms-of-use/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ubee.raystate.com/legal/fr/terms-of-use/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ubee.raystate.com/legal/ar/terms-of-use/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ubee.raystate.com/legal/en/terms-of-use/" />
+  </url>
+  <url>
+    <loc>https://ubee.raystate.com/legal/ar/terms-of-use/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ubee.raystate.com/legal/en/terms-of-use/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ubee.raystate.com/legal/fr/terms-of-use/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ubee.raystate.com/legal/ar/terms-of-use/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ubee.raystate.com/legal/en/terms-of-use/" />
+  </url>
+  <url>
+    <loc>https://ubee.raystate.com/legal/en/subscription-terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ubee.raystate.com/legal/en/subscription-terms/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ubee.raystate.com/legal/fr/subscription-terms/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ubee.raystate.com/legal/ar/subscription-terms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ubee.raystate.com/legal/en/subscription-terms/" />
+  </url>
+  <url>
+    <loc>https://ubee.raystate.com/legal/fr/subscription-terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ubee.raystate.com/legal/en/subscription-terms/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ubee.raystate.com/legal/fr/subscription-terms/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ubee.raystate.com/legal/ar/subscription-terms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ubee.raystate.com/legal/en/subscription-terms/" />
+  </url>
+  <url>
+    <loc>https://ubee.raystate.com/legal/ar/subscription-terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ubee.raystate.com/legal/en/subscription-terms/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ubee.raystate.com/legal/fr/subscription-terms/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ubee.raystate.com/legal/ar/subscription-terms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ubee.raystate.com/legal/en/subscription-terms/" />
   </url>
 </urlset>

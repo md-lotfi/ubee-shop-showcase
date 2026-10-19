@@ -6,6 +6,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 import re
 import xml.etree.ElementTree as ET
+from build_legal_pages import page as render_legal_page, render_body
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -15,6 +16,10 @@ PAGES = {
     "fr/index.html": ("fr", ORIGIN + "fr/"),
     "ar/index.html": ("ar", ORIGIN + "ar/"),
 }
+for language in ("en", "fr", "ar"):
+    for document in ("privacy-policy", "terms-of-use", "subscription-terms"):
+        route = f"legal/{language}/{document}/index.html"
+        PAGES[route] = (language, f"{ORIGIN}legal/{language}/{document}/")
 ALTERNATE_LANGUAGES = {"en", "fr", "ar", "x-default"}
 
 
@@ -84,6 +89,15 @@ def check_page(relative, expected_language, expected_canonical, errors):
         errors.append("missing page: " + relative)
         return None
     text = path.read_text(encoding="utf-8")
+    if relative.startswith("legal/"):
+        _, language, document, _ = Path(relative).parts
+        source = ROOT / "legal-source" / language / f"{document}.md"
+        if not source.is_file():
+            errors.append(relative + ": missing legal Markdown source")
+        else:
+            title, body = render_body(source.read_text(encoding="utf-8"))
+            if text != render_legal_page(language, document, title, body):
+                errors.append(relative + ": stale HTML; run tools/build_legal_pages.py")
     page = Page()
     page.feed(text)
     page.close()
@@ -103,7 +117,7 @@ def check_page(relative, expected_language, expected_canonical, errors):
     if any(marker in text for marker in ("__l5e", ".asset.json", "/src/")):
         errors.append(relative + ": contains a development-only asset pointer")
 
-    required_links = (
+    required_links = () if relative.startswith("legal/") else (
         "https://play.google.com/store/apps/details?id=com.raystate.ubee&hl=en",
         "mailto:contact@raystate.com",
         "tel:+213551056686",
@@ -151,8 +165,9 @@ def main():
     sitemap = ET.parse(ROOT / "sitemap.xml")
     namespace = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
     locations = [node.text for node in sitemap.findall(".//" + namespace + "loc")]
-    if set(locations) != {canonical for _, canonical in PAGES.values()} or len(locations) != 3:
-        errors.append("sitemap locations do not match the three localized pages")
+    expected_locations = {canonical for _, canonical in PAGES.values()}
+    if set(locations) != expected_locations or len(locations) != len(expected_locations):
+        errors.append("sitemap locations do not match all showcase and legal pages")
 
     css_path = ROOT / "assets/styles.css"
     css = css_path.read_text(encoding="utf-8")
