@@ -1,2 +1,4 @@
 - [x] Marketing site (EN/FR/AR)
 - [x] Use app icon for logo + favicon
+- [x] Convert to framework-free static pages for GitHub Pages
+- [x] Add self-hosted assets, search metadata, sitemap, and ubee.raystate.com configuration
